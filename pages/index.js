@@ -3,7 +3,7 @@ import Header from '../components/Header'
 
 const PostLink = (props) => (
   <li>
-    <Link href={`/post?title=${props.title}`}>
+    <Link as={`/p/${props.title}`} href={`/post?title=${props.title}`}>
       <a>{props.title}</a>
     </Link>
   </li>
